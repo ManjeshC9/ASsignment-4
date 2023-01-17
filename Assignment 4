@@ -1,0 +1,140 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPYJc0sKwgASVfdQ6FoHH5W",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ManjeshC9/ASsignment-4/blob/main/Assignment%204\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "tl3yQZMHA3h8"
+      },
+      "outputs": [],
+      "source": [
+        "year = int(input(\"Enter year: \"))\n",
+        "if year%400==0:\n",
+        "    print(year, \"is a Leap Year\")\n",
+        "elif year%100==0:\n",
+        "    print(year, \"is not a Leap Year\")\n",
+        "elif year%4==0:\n",
+        "    print(year, \"is a Leap Year\")\n",
+        "else:\n",
+        "    print(year, \"is not a Leap Year\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = int(input(\"Enter Marks\"))\n",
+        "if(x<25):\n",
+        "     print(\"Grade F\")\n",
+        "elif(x<=45):\n",
+        "    print(\"Grade E\")\n",
+        "elif(x<=50):\n",
+        "    print(\"Grade D\")\n",
+        "elif(x<=60):\n",
+        "    print(\"Grade C\")\n",
+        "elif(x<=80):\n",
+        "    print(\"Grade B\")\n",
+        "else:\n",
+        "    print(\" Grade A\")"
+      ],
+      "metadata": {
+        "id": "Q7okSVU-BVY-"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random \n",
+        "i=10\n",
+        "while i<10:\n",
+        "  i+=1\n",
+        "  a=random. randint(1,20)\n",
+        "  b=random. randint(1.20)\n",
+        "  print (f\"question {i}: \\n{a} * {b} = \")\n",
+        "  ans=input ()\n",
+        "  try : \n",
+        "    ans=float (ans)\n",
+        "    if ans==a*b:\n",
+        "      print (\"right!\\n\")\n",
+        "    else:\n",
+        "      print(f\"it's a wrong answer!\" )\n",
+        "      print(f\"correct answer = {a*b}\\n\")\n",
+        "  except:\n",
+        "        print (f\"it's a wrong answer!\")\n",
+        "        print (f\"correct answer = {a*b}\\n\")"
+      ],
+      "metadata": {
+        "id": "f1p93oRbBfHd"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "i=5\n",
+        "arr=[]\n",
+        "while (i<8):\n",
+        "  print (f\"If the candy is distributed evenly among {i} people, how many candy would be left over?\" )\n",
+        "  arr. append (int(input ()))\n",
+        "  i+=1\n",
+        "set1=[]\n",
+        "set2=[]\n",
+        "set3=[]\n",
+        "\n",
+        "j=arr[0]\n",
+        "while j<200:\n",
+        "  set1. append (j)\n",
+        "  j+=5\n",
+        "set1=set(set1)\n",
+        "k=arr[1]\n",
+        "while k<200:\n",
+        "  set2. append (k)\n",
+        "  k+=6\n",
+        "set2=set(set2)\n",
+        "l=arr[2]\n",
+        "while l<200:\n",
+        "  set3. append (l)\n",
+        "  l+=7\n",
+        "set3=set(set3)\n",
+        "set4=set1. intersection (set2)\n",
+        "set5=set3. intersection (set4)\n",
+        "print (\"feasible answers = \",end=\"\" )\n",
+        "for i in set5:\n",
+        "   print (i,end=\"\")"
+      ],
+      "metadata": {
+        "id": "Itrg-cwOJqnZ"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
